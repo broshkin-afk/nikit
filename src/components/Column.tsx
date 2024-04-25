@@ -78,16 +78,16 @@ export default function Column({id, name}: ColumnProps) {
       )}
       {renameMode && (
         <div className="mb-8">
-          Edit name:
+          Изменить имя:
           <form onSubmit={handleRenameSubmit} className="mb-2">
             <input type="text" defaultValue={name}/>
-            <button type="submit" className="w-full mt-2">Save</button>
+            <button type="submit" className="w-full mt-2">Сохранить</button>
           </form>
           <button
             onClick={() => deleteColumn(id)}
             className="bg-red-500 text-white p-2 flex gap-2 w-full items-center rounded-md justify-center">
             <FontAwesomeIcon icon={faTrash} />
-            Delete column
+            Удалить колонку
           </button>
           <CancelButton onClick={() => setRenameMode(false)} />
         </div>

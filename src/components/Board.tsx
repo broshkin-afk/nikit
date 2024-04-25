@@ -48,7 +48,7 @@ export default function Board({id, name}: {id:string, name:string}) {
           columns: new LiveList(),
           cards: new LiveList(),
         }}>
-        <ClientSideSuspense fallback={(<div>loading...</div>)}>{() => (
+        <ClientSideSuspense fallback={(<div>Загрузка...</div>)}>{() => (
           <>
             <div className="flex gap-2 justify-between items-center mb-4">
               <div>
@@ -56,7 +56,7 @@ export default function Board({id, name}: {id:string, name:string}) {
                   <h1
                     className="text-2xl"
                     onClick={() => setRenameMode(true)}>
-                    Board: {name}
+                    Доска: {name}
                   </h1>
                 )}
                 {renameMode && (
@@ -69,7 +69,7 @@ export default function Board({id, name}: {id:string, name:string}) {
                 className="flex gap-2 items-center btn"
                 href={`/boards/${id}/settings`}>
               <FontAwesomeIcon icon={faCog} />
-                Board settings
+                Настройки доски
               </Link>
             </div>
             <Columns/>

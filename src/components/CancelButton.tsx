@@ -7,7 +7,7 @@ export default function CancelButton({onClick}:{onClick:() => void}) {
       className="mt-4 w-full flex gap-2 items-center justify-center uppercase text-sm text-gray-400"
       onClick={onClick}>
       <FontAwesomeIcon icon={faClose}/>
-      Cancel edit
+      Отменить редактирование
     </button>
   );
 }

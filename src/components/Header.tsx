@@ -9,17 +9,17 @@ export default async function Header() {
   return (
     <header className="bg-gray-200 p-4 px-8">
       <div className="flex justify-between items-center">
-        <Link href="/" className="logo">Trello</Link>
+        <Link href="/" className="logo">PAAC</Link>
         <div>
           {session && (
             <>
-              Hello, {session?.user?.name}
+              Привет!, {session?.user?.name}
               <LogoutButton />
             </>
           )}
           {!session && (
             <>
-              Not logged in
+              Вы не вошли
               <LoginButton />
             </>
           )}

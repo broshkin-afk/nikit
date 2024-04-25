@@ -83,7 +83,7 @@ export default function CardModalBody() {
         <div>
           <form onSubmit={handleNameChangeSubmit}>
             <input type="text" defaultValue={card?.name} className="mb-2"/>
-            <button type="submit" className="w-full">Save</button>
+            <button type="submit" className="w-full">Сохранить</button>
           </form>
           <div className="mt-2">
             <DeleteWithConfirmation
@@ -96,12 +96,12 @@ export default function CardModalBody() {
         <div>
           <h2 className="flex gap-2 items-center mt-4">
             <FontAwesomeIcon icon={faFileLines}/>
-            Description
+            Описание
           </h2>
           <CardDescription/>
           <h2 className="flex gap-2 items-center mt-4">
             <FontAwesomeIcon icon={faComments}/>
-            Comments
+            Комментарии
           </h2>
           <div className="-mx-4">
             {threads && threads.map(thread => (

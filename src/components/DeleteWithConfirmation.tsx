@@ -12,7 +12,7 @@ export default function DeleteWithConfirmation({onDelete}: Props) {
   if (wannaDelete) {
     return (
       <div>
-        <h4 className="mb-2 text-center">Are you sure?</h4>
+        <h4 className="mb-2 text-center">Вы уверены?</h4>
         <div className="grid grid-cols-2 gap-2">
           <div className="">
             <button
@@ -25,7 +25,7 @@ export default function DeleteWithConfirmation({onDelete}: Props) {
           </div>
           <div>
             <button onClick={onDelete} className="w-full btn red with-icon">
-              Yes, delete!
+              Удалено!
             </button>
           </div>
         </div>
@@ -38,7 +38,7 @@ export default function DeleteWithConfirmation({onDelete}: Props) {
       onClick={() => setWannaDelete(true)}
       className="bg-red-500 text-white p-2 w-full justify-center items-center flex gap-2 rounded-md">
       <FontAwesomeIcon icon={faTrash}/>
-      Delete
+      Удалить
     </button>
   );
 }

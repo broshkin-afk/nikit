@@ -12,7 +12,7 @@ export default function BoardDeleteButton({boardId}:{boardId:string}) {
     <div>
       <button
         className="bg-red-500 text-white px-4 py-2 rounded-md"
-        onClick={() => handleDeleteBoard()}>Delete board
+        onClick={() => handleDeleteBoard()}>Удалить доску
       </button>
     </div>
   );
